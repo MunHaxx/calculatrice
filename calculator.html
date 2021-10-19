@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+
+<HTML lang="fr">
+    <head>
+        <title>Calculatrice_02</title>   
+
+        <meta charset="UTF-8">
+        <link rel='stylesheet' href='./assets/css/style v2.css' type='text/css'>
+        <script type="text/javascript" src="./assets/js/script v2.js"></script>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+
+	</head>
+
+    <body>
+        <main>
+
+            <!-- Case avec les opérations -->
+            <div id="case">
+                <div id='nombre-avant'> </div>
+                <div id='ico_op'> </div>
+                <div id='nombre-actuel'>0</div>
+            </div>  
+
+            <!-- Tous les boutons -->
+            <div class='ligne-bouton'>
+                <input type = "button" class='bouton-text' value="truc">
+                <input type = "button" class='bouton-text' value="x²">
+                <input type = "button" class='bouton-text' value="ret">
+                <input type = "button" class='bouton-operation' value="÷">
+            </div>
+
+            <div class='ligne-bouton'>
+                <input type = "button" class='bouton-chiffre' value="7">
+                <input type = "button" class='bouton-chiffre' value="8">
+                <input type = "button" class='bouton-chiffre' value="9">
+                <input type = "button" class='bouton-operation' value="x">
+            </div>
+
+            <div class='ligne-bouton'>
+                <input type = "button" class='bouton-chiffre' value="4">
+                <input type = "button" class='bouton-chiffre' value="5">
+                <input type = "button" class='bouton-chiffre' value="6">
+                <input type = "button" class='bouton-operation' value="-">
+            </div>
+
+            <div class='ligne-bouton'>
+                <input type = "button" class='bouton-chiffre' value="1">
+                <input type = "button" class='bouton-chiffre' value="2">
+                <input type = "button" class='bouton-chiffre' value="3">
+                <input type = "button" class='bouton-operation' value="+">
+            </div>
+
+            <div class='ligne-bouton'>
+                <input type = "button" id='bouton-zero' value="0">
+                <button class='bouton-operation'>.</button>
+                <input type = "button" id='bouton-egal' value="=">
+            </div>
+            
+        </main>
+
+        
+        <script type="text/javascript" src="assets/js/eventListener.js"></script>
+
+
+    </body>
+</HTML>
