@@ -4,19 +4,16 @@ var b = 0;
 var operation = "None";
 var last_op_deja_exec = true;
 
-//
 /* Fonction permettant l'affichage du nombre en noir */
 function refreshNombreActuel (arg){
     document.getElementById("nombre-actuel").innerHTML = arg;
 }
 
-//
 /* Fonction permettant l'affichage du nombre en gris */
 function refreshNombreAvant (arg){
     document.getElementById("nombre-avant").innerHTML = arg;
 }            
 
-//
 /* Permet de rentrer les nombres de 0 a 9 */
 function entrerNombre() {
     a = a + "" + this.value;
@@ -24,7 +21,6 @@ function entrerNombre() {
     refreshNombreActuel(a);
 }
 
-//
 /* Fonction permettant d'effectuer une addition */
 function addition () {
     exec_last_operation();
@@ -33,7 +29,6 @@ function addition () {
     console.log(operation);
 }
 
-//
 /* Fonction permettant d'effectuer une soustraction */
 function soustraction () {
     exec_last_operation();
@@ -42,7 +37,6 @@ function soustraction () {
     console.log(operation);
 }
 
-//
 /* Fonction permettant d'effectuer une multiplication */
 function multiplication() {
     exec_last_operation();
@@ -51,7 +45,6 @@ function multiplication() {
     console.log(operation);
 }
 
-//
 /* Fonction permettant d'effectuer une division */
 function division () {
     exec_last_operation();
@@ -60,7 +53,6 @@ function division () {
     console.log(operation);
 }
 
-//
 /* Fonction effectuant la dernière opération souhaiter */
 function exec_last_operation () {
 
@@ -92,7 +84,6 @@ function exec_last_operation () {
     
 }    
 
-//
 /* Permet de valider une opération */
 function egal() {
     exec_last_operation ();
@@ -103,7 +94,6 @@ function egal() {
     b = 0;
 }
 
-//
 /* Permet de tous remettre à 0 */
 function reset () {
     a="";
@@ -115,7 +105,6 @@ function reset () {
     refreshNombreActuel(b);
 }
 
-//
 /* Permet de rapidement faire le carré du nombre en cours */
 function exposant_2 () {
     a=a**2;
