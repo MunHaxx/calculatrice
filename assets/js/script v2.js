@@ -1,4 +1,3 @@
-//
 /*-- Set up des variable */
 var a = "";
 var b = 0;
